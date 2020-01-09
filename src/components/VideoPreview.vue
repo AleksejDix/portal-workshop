@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-link :to="{ name: 'video', params: { id: video.id } }">
-      <img :src="video.image.url" :alt="video.title" class="rounded" />
+      <img :src="video.image.url" :alt="video.title" class="rounded w-full" />
       <h2 class="pt-4 px-2">{{ video.title }}</h2>
     </router-link>
     <div

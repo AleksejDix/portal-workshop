@@ -5,7 +5,7 @@
       <li
         v-for="video in videos"
         :key="video.id"
-        class="p-2 w-1/1 md:w-1/2 lg:w-1/4 "
+        class="p-2 w-1/1 md:w-1/2 lg:w-1/4"
       >
         <div class="rounded p-4 bg-white border">
           <video-preview :video="video" />
