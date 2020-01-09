@@ -5,6 +5,7 @@ const postcssPurgecss = require(`@fullhuman/postcss-purgecss`);
 const purgecss = postcssPurgecss({
   // Specify the paths to all of the template files in your project.
   content: ["./public/**/*.html", "./src/**/*.vue"],
+  defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
   whitelistPatterns: [
     /-(leave|enter|appear)(|-(to|from|active))$/,
     /^(?!(|.*?:)cursor-move).+-move$/,
